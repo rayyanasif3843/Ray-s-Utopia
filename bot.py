@@ -4,7 +4,9 @@ from discord.utils import get
 from datetime import timedelta
 import yt_dlp
 
-TOKEN = "YOUR_BOT_TOKEN"
+import os
+
+TOKEN = os.getenv("TOKEN")
 
 intents = discord.Intents.all()
 
